@@ -51,6 +51,7 @@ AutoLoad=
 3=
 1=
 0=
+4=
 [Find]
 1="Shell_NotifyIcon"
 2="Destroy_Notify"

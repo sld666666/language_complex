@@ -213,6 +213,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\p3.h"
+				>
+			</File>
+			<File
 				RelativePath=".\stdafx.h"
 				>
 			</File>

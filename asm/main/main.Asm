@@ -7,16 +7,14 @@
 
 
 include p3.inc
-
- .data                    ;Êý¾Ý¶Î
-	hello db '%d', 0
+include p3.asm
 
 
 	
  .code
      start:
      	
-     	invoke donFunP3
+     	invoke print
         rtnProcess:
          	ret
      

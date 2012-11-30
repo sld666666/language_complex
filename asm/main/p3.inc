@@ -2,4 +2,4 @@
 include include.inc
 
 
- donFunP3 PROTO
+ print PROTO
