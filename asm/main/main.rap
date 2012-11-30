@@ -1,0 +1,64 @@
+[Project]
+Assembler=masm
+Type=Console App
+Description=main
+Backup=$P\Bak\
+Group=1
+GroupExpand=1
+[Files]
+1=main.Asm
+2=main.Inc
+3=p3.inc
+4=p3.asm
+5=include.inc
+[MakeFiles]
+0=main.rap
+1=main.rc
+2=main.asm
+3=main.obj
+4=main.res
+5=main.exe
+6=main.def
+7=main.dll
+8=main.txt
+9=main.lib
+10=main.mak
+11=main.hla
+12=main.com
+13=main.ocx
+14=main.idl
+15=main.tlb
+16=main.sys
+[MakeDef]
+Menu=0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0
+1=4,O,$B\RC.EXE /v,1
+2=3,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",2
+3=5,O,$B\LINK.EXE /SUBSYSTEM:CONSOLE /RELEASE /VERSION:4.0 /LIBPATH:"$L" /OUT:"$5",3
+4=0,0,$D\RunStub,5
+5=rsrc.obj,O,$B\CVTRES.EXE,rsrc.res
+6=*.obj,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",*.asm
+7=0,0,"$E\OllyDbg",5
+[Group]
+Group=Assembly,Resources,Misc
+1=2
+2=2
+3=2
+4=2
+5=2
+[AutoLoad]
+AutoLoad=
+[RADebugBP]
+3=
+1=
+0=
+[Find]
+1="Shell_NotifyIcon"
+2="Destroy_Notify"
+3="Test_WinSock_Interface_InThread"
+4="LogServiceMsg"
+5="WndProc"
+6="proc"
+[Collapse]
+2=
+[Size]
+2=0,0,0,0,2
