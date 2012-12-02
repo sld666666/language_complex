@@ -5,11 +5,12 @@
 #include "p1.h"
 #include "p2.h"
 #include "p3.h"
+#include "p4.h"
 
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	doFunP3(2009, 5,24);
+	doFunP4();
 	return 0;
 }
 

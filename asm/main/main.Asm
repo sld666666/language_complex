@@ -6,15 +6,15 @@
  
 
 
-include p3.inc
-include p3.asm
+include p4.inc
+include p4.asm
 
 
 	
  .code
      start:
      	
-     	invoke print
+     	invoke doFunP4
         rtnProcess:
          	ret
      
